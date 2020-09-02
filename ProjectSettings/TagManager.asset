@@ -6,6 +6,7 @@ TagManager:
   tags:
   - plateform
   - Plateforme
+  - Enemy
   layers:
   - Default
   - TransparentFX
