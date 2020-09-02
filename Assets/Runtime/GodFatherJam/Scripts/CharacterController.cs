@@ -8,9 +8,12 @@ public class CharacterController : MonoBehaviour
     public int playerId;
     private Player _player;
 
-    private Vector3 moveVector;
+    public PlayerController playerController;
+
+    private Vector3 _moveVector;
     private bool _interaction;
     private bool _overload;
+    private bool _jump;
 
     private void Awake()
     {
@@ -21,30 +24,6 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //if(Input.GetAxis("Horizontal") < 0)
-        //{
-        //    //move left
-        //    Debug.Log("left");
-        //}
-
-        //if (Input.GetAxis("Horizontal") > 0)
-        //{
-        //    //Move right
-        //    Debug.Log("right");
-        //}
-
-        //if (Input.GetAxis("Vertical") > 0)
-        //{
-        //    //Move up
-        //    Debug.Log("up");
-        //}
-
-        //if (Input.GetAxis("Vertical") < 0)
-        //{
-        //    //Move down
-        //    Debug.Log("down");
-        //}
-
         GetInput();
         ProcessInput();
     }
@@ -55,19 +34,29 @@ public class CharacterController : MonoBehaviour
         // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
         // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
 
-        moveVector.x = _player.GetAxis("MoveHorizontal"); // get input by name or action id
-        moveVector.y = _player.GetAxis("MoveVertical");
+        _moveVector.x = _player.GetAxis("MoveHorizontal"); // get input by name or action id
+        _moveVector.y = _player.GetAxis("MoveVertical");
         _overload = _player.GetButtonDown("Overload");
         _interaction = _player.GetButtonDown("Interaction");
+        _jump = _player.GetButtonDown("Jump");
     }
 
     private void ProcessInput()
     {
         // Process movement
-        if (moveVector.x != 0.0f || moveVector.y != 0.0f)
+        if (_moveVector.x != 0.0f)
         {
-            //cc.Move(moveVector * moveSpeed * Time.deltaTime);
-            Debug.Log("Movement x :" + moveVector.x + " Movement y :" + moveVector.y);
+            playerController.Move(_moveVector.x);
+        }
+
+        if (_moveVector.y < 0.0f && _jump){
+            //go under platform
+            Debug.Log("UnderPlatform");
+        }
+        else if (_jump)
+        {
+            playerController.Jump();
+            Debug.Log("Jump");
         }
 
         if (_overload)

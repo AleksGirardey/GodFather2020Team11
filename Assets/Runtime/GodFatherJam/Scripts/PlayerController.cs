@@ -14,14 +14,9 @@ public class PlayerController : MonoBehaviour
     {
         _myRg2D = GetComponent<Rigidbody2D>();
     }
-   
-    private void Update(){
-        Move();
-        Jump();
-    }
 
-    private void Move() {
-        if (!(Input.GetAxis("Horizontal") <= 0f) && !(Input.GetAxis("Horizontal") >= 0f)) return;
+    public void Move(float HorizontalAxis) {
+        //if (!(Input.GetAxis("Horizontal") <= 0f) && !(Input.GetAxis("Horizontal") >= 0f)) return;
 
         //     _isMoving = true;
         // } else {
@@ -30,15 +25,13 @@ public class PlayerController : MonoBehaviour
 
         // if (!_isMoving) return;
 
-        float distanceX = Time.deltaTime * Input.GetAxis("Horizontal") * speedPosX;
+        float distanceX = Time.deltaTime * HorizontalAxis * speedPosX;
 
         transform.Translate(distanceX, 0, 0);
     }
 
-    private void Jump(){
-        if (Input.GetKeyDown(KeyCode.Space)) {
+    public void Jump(){
             _myRg2D.velocity = Vector2.up * jumpVelocity;
-        }
     }
 
 }

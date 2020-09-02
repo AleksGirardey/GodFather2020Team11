@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 4
 --- !u!114 &4212470598173772651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerId: 0
+  playerController: {fileID: 1095544279}
 --- !u!61 &1095544281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000007450581, y: 0.028826488}
+  m_Offset: {x: 0, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +147,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13905741, y: 0.08937508}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!58 &1095544280
 CircleCollider2D:
@@ -161,9 +162,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0008888183, y: -0.040591642}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.029013127
+  m_Radius: 0.5
 --- !u!114 &1095544279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,11 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0729de2b17bfe5740bb992140b70a2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMoving: 0
-  _isJumping: 0
   speedPosX: 5
-  _speedPosY: 2
-  jumpVelocity: 9.03
+  jumpVelocity: 10
 --- !u!1 &4212470598467706102
 GameObject:
   m_ObjectHideFlags: 0

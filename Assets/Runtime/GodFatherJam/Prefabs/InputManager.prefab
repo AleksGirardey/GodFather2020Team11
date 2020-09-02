@@ -55,5 +55,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6671411704694952560, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}
+      propertyPath: _userData.keyboardMaps.Array.data[0].actionElementMaps.Array.data[5]._keyboardKeyCode
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671411704694952560, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}
+      propertyPath: _userData.joystickMaps.Array.data[0].actionElementMaps.Array.data[4]._actionId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671411704694952560, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}
+      propertyPath: _userData.keyboardMaps.Array.data[0].actionElementMaps.Array.data[0]._actionId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671411704694952560, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}
+      propertyPath: _userData.keyboardMaps.Array.data[0].actionElementMaps.Array.data[8]._actionId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671411704694952560, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}
+      propertyPath: _userData.keyboardMaps.Array.data[0].actionElementMaps.Array.data[10]._actionId
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6f65123fc476a4faa4e072cc3b2715, type: 3}

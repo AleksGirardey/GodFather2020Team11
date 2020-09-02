@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 84260942}
   - component: {fileID: 84260941}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: BlackSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518099803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: -0.49, z: -1.0016532}
+  m_LocalPosition: {x: 1.5, y: 1.9, z: -1.0016532}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -506,8 +506,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929799083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.083, y: -2.19, z: 0}
-  m_LocalScale: {x: 8.258191, y: 2.459981, z: 1}
+  m_LocalPosition: {x: 0.083, y: -2.514, z: 0}
+  m_LocalScale: {x: 8.258191, y: 1.8128171, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -614,8 +614,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131925683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.087, y: 0.422, z: 0}
-  m_LocalScale: {x: 8.25819, y: 3.33597, z: 1}
+  m_LocalPosition: {x: 0.087, y: 0.215, z: 0}
+  m_LocalScale: {x: 8.25819, y: 3.7494364, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
