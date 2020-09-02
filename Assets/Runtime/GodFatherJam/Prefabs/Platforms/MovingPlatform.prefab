@@ -71,7 +71,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7257403427428605094, guid: eb3578b10b4f9444a823f92b9c64ce6a, type: 3}
       propertyPath: m_Name
-      value: Platform
+      value: MovingPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257403427428605095, guid: eb3578b10b4f9444a823f92b9c64ce6a, type: 3}
+      propertyPath: timeBeforeReset
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3578b10b4f9444a823f92b9c64ce6a, type: 3}

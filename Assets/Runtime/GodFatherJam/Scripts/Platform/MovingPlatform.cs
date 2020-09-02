@@ -53,8 +53,7 @@ public class MovingPlatform : MonoBehaviour
         StartMovement();
     }
     
-    private void OnDrawGizmos()
-    {
+    private void OnDrawGizmos() {
         float gizmosCubeSize = 0.3f;
 
         Vector3 position = transform.position;
