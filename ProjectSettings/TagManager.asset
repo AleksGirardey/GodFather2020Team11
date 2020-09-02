@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - plateform
+  - Plateforme
   - Enemy
   layers:
   - Default
