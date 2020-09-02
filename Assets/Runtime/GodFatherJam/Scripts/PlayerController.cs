@@ -1,46 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
 
-    public bool _isMoving, _isJumping;
+    // public bool _isMoving;
     public float speedPosX = 3;
-    public float _speedPosY = 2;
     private Rigidbody2D _myRg2D;
 
     [Range(1, 10)]
-    public float jumpVelocity;
+    public float jumpVelocity = 10f;
 
-    void Start(){
+    private void Awake()
+    {
         _myRg2D = GetComponent<Rigidbody2D>();
     }
-
-    void Update(){
+   
+    private void Update(){
         Move();
         Jump();
     }
 
-    void Move(){
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)){
-            _isMoving = true;
-        }else{
-            _isMoving = false;
-        }
+    private void Move() {
+        if (!(Input.GetAxis("Horizontal") <= 0f) && !(Input.GetAxis("Horizontal") >= 0f)) return;
 
-        if (_isMoving){
-            float distanceX = Time.deltaTime * Input.GetAxis("Horizontal") * speedPosX;
+        //     _isMoving = true;
+        // } else {
+        //     _isMoving = false;
+        // }
 
-            transform.Translate(distanceX, 0, 0);
-            _isJumping = true;
-        }
+        // if (!_isMoving) return;
+
+        float distanceX = Time.deltaTime * Input.GetAxis("Horizontal") * speedPosX;
+
+        transform.Translate(distanceX, 0, 0);
     }
 
-    void Jump(){
-            if (Input.GetKeyDown(KeyCode.Space)){
-            GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpVelocity;
-            }
+    private void Jump(){
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            _myRg2D.velocity = Vector2.up * jumpVelocity;
+        }
     }
 
 }
