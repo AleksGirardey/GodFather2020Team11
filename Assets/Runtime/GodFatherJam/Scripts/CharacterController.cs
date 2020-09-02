@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Rewired;
 
 public class CharacterController : MonoBehaviour
 {
+    public static CharacterController Instance;
+    
     public int playerId;
     private Player _player;
 
@@ -15,8 +15,10 @@ public class CharacterController : MonoBehaviour
     private bool _overload;
     private bool _jump;
 
-    private void Awake()
-    {
+    private void Awake() {
+        if (Instance == null) Instance = this;
+        if (Instance != this) Destroy(gameObject);
+        
         // Get the Player for a particular playerId
         _player = ReInput.players.GetPlayer(playerId);
     }
@@ -41,6 +43,20 @@ public class CharacterController : MonoBehaviour
         _jump = _player.GetButtonDown("Jump");
     }
 
+    public bool IsInteracting() {
+        return _interaction;
+    }
+    
+    public bool HasReleaseFallingFromPlatform()
+    {
+        return _moveVector.y < 0.0f && _player.GetButtonUp("Jump");
+    }
+    
+    public bool IsFallingFromPlatform() {
+        Debug.Log("Is Falling ?" + (_moveVector.y < 0.0f && _jump));
+        return _moveVector.y < 0.0f && _jump;
+    }
+    
     private void ProcessInput()
     {
         // Process movement
