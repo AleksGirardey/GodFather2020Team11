@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float speedPosX = 3;
@@ -40,19 +39,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void Move(float horizontalAxis) {
-        // float distanceX = Time.deltaTime * horizontalAxis * speedPosX;
-
-        //transform.Translate(distanceX, 0, 0);
         _lastHorizontalAxis = horizontalAxis;
         _myRg2D.velocity = new Vector2(horizontalAxis * speedPosX, _myRg2D.velocity.y);
-        
-//        Debug.Log(Mathf.Abs(_myRg2D.velocity.x));
     }
 
     public void Jump() {
         if (_isGrounded == false){
             return;
-        }Debug.Log("collision");
+        }
         _myRg2D.velocity = Vector2.up * jumpVelocity;
     }
 
@@ -66,8 +60,7 @@ public class PlayerController : MonoBehaviour {
         _lastCheckpoint = cp;
     }
 
-    private void Flip()
-    {
+    private void Flip() {
         if ((_lastHorizontalAxis < 0 && _isFacingRight) || (_lastHorizontalAxis > 0 && !_isFacingRight))
         {
             _isFacingRight = !_isFacingRight;
@@ -76,5 +69,10 @@ public class PlayerController : MonoBehaviour {
             theScale.x *= -1;
             localTransform.localScale = theScale;
         }
+    }
+
+    public void ReSpawn() {
+        transform.position = _lastCheckpoint.GetSpawnPosition();
+        overloadScript.ResetLightAndColliderValues();
     }
 }

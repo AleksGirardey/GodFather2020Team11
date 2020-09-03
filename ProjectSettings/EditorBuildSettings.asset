@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Runtime/GodFatherJam/Scenes/MainMenu.unity
+    guid: 5a858d0ee54d79e4e8d8231f4e40af1f
+  - enabled: 1
     path: Assets/Runtime/GodFatherJam/Scenes/MainScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 9dd74cc71698a434b86f48d5d16828f2
   m_configObjects: {}
