@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 7617566952883697297, guid: 6dc06fb76ad154f4e928bc3dc14e8863, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedPosX: 5
   jumpVelocity: 10
-  overloadScript: {fileID: 0}
+  overloadScript: {fileID: 4212470598467706098}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 4212470598467706098}
   m_Layer: 0
   m_Name: LightObject
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,17 +267,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07704e547225112469bb542e371817b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfHitShieldCanTake: 0
-  _pointLight: {fileID: 0}
-  _lightCollider: {fileID: 0}
-  lightRadius: 0
-  NormalLightEjectionForce: 0
-  numberOfOverloadCharges: 0
-  OverloadLightRadius: 0
-  OverloadTimeToGrow: 0
-  OverloadTimeOverloaded: 0
-  OverloadLightIntensity: 0
-  OverloadEjectionForce: 0
+  _numberOfHitShieldCanTake: 7
+  _pointLight: {fileID: 4212470598480592259}
+  _lightCollider: {fileID: 4212470598467706100}
+  lightRadius: 2.14
+  NormalLightEjectionForce: 2
+  numberOfOverloadCharges: 100
+  OverloadLightRadius: 4.18
+  OverloadTimeToGrow: 0.2
+  OverloadTimeOverloaded: 2
+  OverloadLightIntensity: 1
+  OverloadEjectionForce: 3
   IsOverloaded: 0
 --- !u!1 &4212470598480592261
 GameObject:

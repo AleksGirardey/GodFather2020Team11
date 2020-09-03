@@ -12,6 +12,6 @@ public class Liane : MonoBehaviour {
             
         if (objectToActivate != null)
             objectToActivate.Activate();
-        enabled = false;
+        gameObject.SetActive(false);
     }
 }
