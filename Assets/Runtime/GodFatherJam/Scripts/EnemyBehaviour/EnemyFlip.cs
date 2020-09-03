@@ -17,6 +17,8 @@ public class EnemyFlip : MonoBehaviour
     private SpriteRenderer _sr;
     private bool _isBlinded = false;
 
+    public BoxCollider2D GFXCollider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,28 +60,37 @@ public class EnemyFlip : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Light")) return;
-        //ejected
-        LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
-        _isBlinded = true;
-        //case when enemy is not flying and light is not overloaded
-        if (!light.IsOverloaded && !isFlying)
+        if (other.CompareTag("Light"))
         {
-            aiPath.canMove = false;
-            Vector2 direction = (transform.position - other.transform.position).normalized;
-            rb.AddForce(direction * light.NormalLightEjectionForce, ForceMode2D.Impulse);
-            StartCoroutine(WaitUntilVelocityGoesTo0());
+            //ejected
+            LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
+            _isBlinded = true;
+            //case when enemy is not flying and light is not overloaded
+            if (!light.IsOverloaded && !isFlying)
+            {
+                aiPath.canMove = false;
+                Vector2 direction = (transform.position - other.transform.position).normalized;
+                rb.AddForce(direction * light.NormalLightEjectionForce, ForceMode2D.Impulse);
+                StartCoroutine(WaitUntilVelocityGoesTo0());
 
+            }
+            //overload
+            else if (light.IsOverloaded)
+            {
+                aiPath.canMove = false;
+                Vector2 direction = (transform.position - other.transform.position).normalized;
+                float distanceToPlayer = light.OverloadLightRadius - Vector2.Distance(other.transform.position, transform.position);
+                rb.AddForce(direction * distanceToPlayer * light.OverloadEjectionForce, ForceMode2D.Impulse);
+                //when ejection velocity goes under x velocity, reactivate pathfinding
+                StartCoroutine(WaitUntilVelocityGoesTo0());
+            }
         }
-        //overload
-        else if (light.IsOverloaded)
+        else if (other.CompareTag("VeilleuseLight"))
         {
-            aiPath.canMove = false;
-            Vector2 direction = (transform.position - other.transform.position).normalized;
-            float distanceToPlayer = light.OverloadLightRadius - Vector2.Distance(other.transform.position, transform.position);
-            rb.AddForce(direction * distanceToPlayer * light.OverloadEjectionForce, ForceMode2D.Impulse);
-            //when ejection velocity goes under x velocity, reactivate pathfinding
-            StartCoroutine(WaitUntilVelocityGoesTo0());
+            aiPath.enabled = false;
+            targetBehaviour.enabled = false;
+            GFXCollider.enabled = false;
+
         }
     }
 }
