@@ -59,6 +59,10 @@ public class PlayerController : MonoBehaviour {
     public void SetLastCheckpoint(Checkpoint cp) {
         _lastCheckpoint = cp;
     }
+    public Checkpoint GetLastCheckpoint()
+    {
+        return _lastCheckpoint;
+    }
 
     private void Flip() {
         if ((_lastHorizontalAxis < 0 && _isFacingRight) || (_lastHorizontalAxis > 0 && !_isFacingRight))

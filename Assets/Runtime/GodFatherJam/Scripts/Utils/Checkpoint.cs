@@ -2,7 +2,7 @@
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Checkpoint : MonoBehaviour {
-    [SerializeField] private float overloadChargesToRefill;
+    [SerializeField] private int overloadChargesToRefill;
     [SerializeField] private Vector2 spawnPosition;
     
     private void Awake() {
@@ -14,7 +14,7 @@ public class Checkpoint : MonoBehaviour {
             other.GetComponent<PlayerController>().SetLastCheckpoint(this);
     }
 
-    public float GetOverloadChargesToRefill() { return overloadChargesToRefill; }
+    public int GetOverloadChargesToRefill() { return overloadChargesToRefill; }
 
     public Vector2 GetSpawnPosition() { return transform.TransformPoint(spawnPosition); }
 
