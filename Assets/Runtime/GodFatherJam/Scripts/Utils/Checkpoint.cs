@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Checkpoint : MonoBehaviour {
@@ -17,16 +16,13 @@ public class Checkpoint : MonoBehaviour {
 
     public float GetOverloadChargesToRefill() { return overloadChargesToRefill; }
 
-    public Vector2 GetSpawnPosition() { return spawnPosition; }
+    public Vector2 GetSpawnPosition() { return transform.TransformPoint(spawnPosition); }
 
-    private void OnDrawGizmos()
-    {
+    private void OnDrawGizmos() {
         float gizmosCubeSize = 0.3f;
-
-        Vector3 position = transform.position;
         
         Gizmos.color = Color.yellow;
-        Vector3 spawn = new Vector3(spawnPosition.x, spawnPosition.y, position.z);
+        Vector3 spawn = GetSpawnPosition();
         Gizmos.DrawCube(spawn, Vector3.one * gizmosCubeSize);
     }
 }
