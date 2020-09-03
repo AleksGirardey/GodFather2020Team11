@@ -43,30 +43,28 @@ public class EnemyFlip : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("light"))
+        if (!other.CompareTag("Light")) return;
+        //ejected
+        LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
+
+        //case when enemy is not flying and light is not overloaded
+        if (!light.IsOverloaded && !isFlying)
         {
-            //ejected
-            LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
+            aiPath.canMove = false;
+            Vector2 direction = (transform.position - other.transform.position).normalized;
+            rb.AddForce(direction * light.NormalLightEjectionForce, ForceMode2D.Impulse);
+            StartCoroutine(WaitUntilVelocityGoesTo0());
 
-            //case when enemy is not flying and light is not overloaded
-            if (!light.IsOverloaded && !isFlying)
-            {
-                aiPath.canMove = false;
-                Vector2 direction = (transform.position - other.transform.position).normalized;
-                rb.AddForce(direction * light.NormalLightEjectionForce, ForceMode2D.Impulse);
-                StartCoroutine(WaitUntilVelocityGoesTo0());
-
-            }
-            //overload
-            else if (light.IsOverloaded)
-            {
-                aiPath.canMove = false;
-                Vector2 direction = (transform.position - other.transform.position).normalized;
-                float distanceToPlayer = light.OverloadLightRadius - Vector2.Distance(other.transform.position, transform.position);
-                rb.AddForce(direction * distanceToPlayer * light.OverloadEjectionForce, ForceMode2D.Impulse);
-                //when ejection velocity goes under x velocity, reactivate pathfinding
-                StartCoroutine(WaitUntilVelocityGoesTo0());
-            }
+        }
+        //overload
+        else if (light.IsOverloaded)
+        {
+            aiPath.canMove = false;
+            Vector2 direction = (transform.position - other.transform.position).normalized;
+            float distanceToPlayer = light.OverloadLightRadius - Vector2.Distance(other.transform.position, transform.position);
+            rb.AddForce(direction * distanceToPlayer * light.OverloadEjectionForce, ForceMode2D.Impulse);
+            //when ejection velocity goes under x velocity, reactivate pathfinding
+            StartCoroutine(WaitUntilVelocityGoesTo0());
         }
     }
 }
