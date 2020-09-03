@@ -18,11 +18,11 @@ GameObject:
   - component: {fileID: 7397119610138659488}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7397119610138659516
 Transform:
   m_ObjectHideFlags: 0
@@ -132,7 +132,11 @@ MonoBehaviour:
   pathfinding: {fileID: 7397119610138659519}
   aggroRadius: 5
   aggroCollider: {fileID: 7397119610138659489}
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   distanceTresholdToChangeTarget: 1
   patrolTranslationTime: 2
   waitBeforeNextPatrol: 3
@@ -191,7 +195,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -210,9 +214,10 @@ GameObject:
   - component: {fileID: 7397119610806260174}
   - component: {fileID: 7397119610806260173}
   - component: {fileID: 7397119610806260172}
+  - component: {fileID: 1082491853}
   m_Layer: 0
   m_Name: EnemyGFX
-  m_TagString: Enemy
+  m_TagString: EnemyGFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,4 +299,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a67c0a06c21c8241bc542a713cfc8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlying: 0
   aiPath: {fileID: 7397119610138659519}
+  rb: {fileID: 7397119610138659488}
+--- !u!61 &1082491853
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397119610806260171}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08491218, y: -0.016982555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.32, y: 4.32}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4179676, y: 3.9463859}
+  m_EdgeRadius: 0

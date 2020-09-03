@@ -77,12 +77,12 @@ public class CharacterController : MonoBehaviour
 
         if (_overload)
         {
-            Debug.Log("Overload");
+            playerController.Overload();
         }
 
         if (_interaction)
         {
-            Debug.Log("Interaction");
+            Debug.Log("Interact");
         }
     }
 }

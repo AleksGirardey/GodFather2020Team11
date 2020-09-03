@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [Range(1, 10)]
     public float jumpVelocity = 10f;
 
+    public LightShieldBehaviour overloadScript;
+
     private void Awake()
     {
         _myRg2D = GetComponent<Rigidbody2D>();
@@ -32,6 +34,12 @@ public class PlayerController : MonoBehaviour
 
     public void Jump() {
         _myRg2D.velocity = Vector2.up * jumpVelocity;
+    }
+
+    public void Overload()
+    {
+        if (!overloadScript.IsOverloaded)
+            overloadScript.Overload();
     }
 
 }
