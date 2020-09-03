@@ -16,13 +16,13 @@ public class MenuController : MonoBehaviour {
     private Player _player;
     private bool _canSwitch = true;
     private void Awake() {
-        _player = ReInput.players.GetPlayer(0);
+        _player = ReInput.players.GetPlayer(1);
     }
 
     private void Update() {
         float moveY = _player.GetAxis("MoveVertical");
         
-        if (moveY > 0.0f || moveY < 0.0f && _canSwitch)
+        if ((moveY > 0.0f || moveY < 0.0f) && _canSwitch)
             Switch();
 
         if (_player.GetButtonDown("Interaction"))

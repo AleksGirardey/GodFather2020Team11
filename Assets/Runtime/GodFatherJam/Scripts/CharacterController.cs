@@ -47,7 +47,7 @@ namespace GodFather
             _moveVector.y = _player.GetAxis("MoveVertical");
             _overload = _player.GetButtonDown("Overload");
             _interaction = _player.GetButtonDown("Interaction");
-            _jump = _player.GetButtonDown("Jump") && (_moveVector.y >= 0.0f);
+            _jump = _player.GetButtonDown("Jump") && (_moveVector.y >= 0.0f).;
         }
 
         public bool IsInteracting()
