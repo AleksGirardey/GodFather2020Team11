@@ -39,8 +39,7 @@ namespace GodFather
         }
 
 
-        private void GetInput()
-        {
+        private void GetInput() {
             // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
             // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
 
@@ -48,7 +47,7 @@ namespace GodFather
             _moveVector.y = _player.GetAxis("MoveVertical");
             _overload = _player.GetButtonDown("Overload");
             _interaction = _player.GetButtonDown("Interaction");
-            _jump = _player.GetButtonDown("Jump");
+            _jump = _player.GetButtonDown("Jump") && (_moveVector.y >= 0.0f);
         }
 
         public bool IsInteracting()
@@ -61,9 +60,7 @@ namespace GodFather
             return _moveVector.y < 0.0f && _player.GetButtonUp("Jump");
         }
 
-        public bool IsFallingFromPlatform()
-        {
-            Debug.Log("Is Falling ?" + (_moveVector.y < 0.0f && _jump));
+        public bool IsFallingFromPlatform() {
             return _moveVector.y < 0.0f && _jump;
         }
 

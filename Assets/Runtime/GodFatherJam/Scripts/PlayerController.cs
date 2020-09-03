@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour {
         
         _animator.SetBool("Grounded", _isGrounded);
         _animator.SetFloat("Speed", Mathf.Abs(_myRg2D.velocity.x));
-        Debug.Log(_myRg2D.velocity.y);
         _animator.SetFloat("SpeedV", _myRg2D.velocity.y);
     }
 

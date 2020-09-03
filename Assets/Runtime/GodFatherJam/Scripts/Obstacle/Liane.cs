@@ -2,7 +2,7 @@
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Liane : MonoBehaviour {
-    public IActivable objectToActivate;
+    public Activable objectToActivate;
     public void OnTriggerStay2D(Collider2D other) {
         if (!other.CompareTag("Light")) return;
         
@@ -10,7 +10,8 @@ public class Liane : MonoBehaviour {
 
         if (!lightShieldBehaviour.IsOverloaded) return;
             
-        objectToActivate?.Activate();
+        if (objectToActivate != null)
+            objectToActivate.Activate();
         enabled = false;
     }
 }

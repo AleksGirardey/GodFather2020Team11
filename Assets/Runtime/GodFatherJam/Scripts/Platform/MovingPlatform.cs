@@ -1,16 +1,15 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour, IActivable
+public class MovingPlatform : Activable
 {
     public float movementSpeed = 4f;
     public float waitBeforeMove = 2f;
 
-    private bool _isGoingDown = true;
+    private bool _isGoingDown;
 
     [SerializeField] private MovingMode movingMode = MovingMode.Infinite;
-
+    
     [Header("Platform movement points")]
     public float topPoint;
     public float bottomPoint;
@@ -26,7 +25,7 @@ public class MovingPlatform : MonoBehaviour, IActivable
     
     private void Start()
     {
-        _targetMovementPoint = bottomPoint;
+        _targetMovementPoint = topPoint;
 
         StartMovement();
     }
@@ -67,7 +66,7 @@ public class MovingPlatform : MonoBehaviour, IActivable
         Gizmos.DrawLine(top, bottom);
     }
 
-    public void Activate() {
+    public override void Activate() {
         Switch();
     }
 }

@@ -9,11 +9,11 @@ public class Interuptor : MonoBehaviour
         spriteDeLaToucheB.enabled = false;
     }
 
-    public Door doortoactivate;
+    [SerializeField] public Activable objectToActivate;
 
     private void LateUpdate(){
         if (CharacterController.Instance.IsInteracting()){
-            doortoactivate.OpenDoor();
+            objectToActivate.Activate();
         }
     }
 

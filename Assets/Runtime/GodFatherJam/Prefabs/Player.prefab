@@ -162,7 +162,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.030000001, y: 0.19400972}
   serializedVersion: 2
@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedPosX: 5
   jumpVelocity: 10
+  overloadScript: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
@@ -266,9 +267,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07704e547225112469bb542e371817b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightReductionOnCollision: 0.1
-  pointLight: {fileID: 4212470598480592259}
-  lightCollider: {fileID: 4212470598467706100}
+  _numberOfHitShieldCanTake: 0
+  _pointLight: {fileID: 0}
+  _lightCollider: {fileID: 0}
+  lightRadius: 0
+  NormalLightEjectionForce: 0
+  numberOfOverloadCharges: 0
+  OverloadLightRadius: 0
+  OverloadTimeToGrow: 0
+  OverloadTimeOverloaded: 0
+  OverloadLightIntensity: 0
+  OverloadEjectionForce: 0
+  IsOverloaded: 0
 --- !u!1 &4212470598480592261
 GameObject:
   m_ObjectHideFlags: 0
