@@ -2,16 +2,14 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatform : MonoBehaviour, IActivable
 {
-
-    public Transform sprite;
-    public Transform colliders;
-    
     public float movementSpeed = 4f;
     public float waitBeforeMove = 2f;
 
     private bool _isGoingDown = true;
+
+    [SerializeField] private MovingMode movingMode = MovingMode.Infinite;
 
     [Header("Platform movement points")]
     public float topPoint;
@@ -20,13 +18,12 @@ public class MovingPlatform : MonoBehaviour
     private float _targetMovementPoint;
 
     private Sequence _movementSequence;
-    
-    // [Serializable]
-    // public class PlatformPoint {
-    //     public float posX;
-    //     public float posY;
-    // }
 
+    private enum MovingMode {
+        Static,
+        Infinite
+    }
+    
     private void Start()
     {
         _targetMovementPoint = bottomPoint;
@@ -38,12 +35,12 @@ public class MovingPlatform : MonoBehaviour
         _movementSequence = DOTween.Sequence();
         _movementSequence.Append(transform.DOLocalMoveY(_targetMovementPoint, movementSpeed));
         _movementSequence.PrependInterval(waitBeforeMove);
-        _movementSequence.OnComplete(Switch);
+        if (movingMode == MovingMode.Infinite)
+            _movementSequence.OnComplete(Switch);
     }
     
     private void Switch() {
-        if (_isGoingDown)
-        {
+        if (_isGoingDown) {
             _targetMovementPoint = topPoint;
             _isGoingDown = false;
         } else {
@@ -68,5 +65,9 @@ public class MovingPlatform : MonoBehaviour
         
         Gizmos.color = Color.magenta;
         Gizmos.DrawLine(top, bottom);
+    }
+
+    public void Activate() {
+        Switch();
     }
 }

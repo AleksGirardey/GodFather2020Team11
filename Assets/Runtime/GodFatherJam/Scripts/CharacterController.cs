@@ -1,88 +1,85 @@
 ﻿using UnityEngine;
 using Rewired;
 
-public class CharacterController : MonoBehaviour
+namespace GodFather
 {
-    public static CharacterController Instance;
-    
-    public int playerId;
-    private Player _player;
 
-    public PlayerController playerController;
-
-    private Vector3 _moveVector;
-    private bool _interaction;
-    private bool _overload;
-    private bool _jump;
-
-    private void Awake() {
-        if (Instance == null) Instance = this;
-        if (Instance != this) Destroy(gameObject);
-        
-        // Get the Player for a particular playerId
-        _player = ReInput.players.GetPlayer(playerId);
-    }
-
-    // Update is called once per frame
-    private void Update()
+    public class CharacterController : MonoBehaviour
     {
-        GetInput();
-        ProcessInput();
-    }
+        public static CharacterController Instance;
 
+        public int playerId;
+        private Player _player;
 
-    private void GetInput()
-    {
-        // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
-        // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
+        public PlayerController playerController;
 
-        _moveVector.x = _player.GetAxis("MoveHorizontal"); // get input by name or action id
-        _moveVector.y = _player.GetAxis("MoveVertical");
-        _overload = _player.GetButtonDown("Overload");
-        _interaction = _player.GetButtonDown("Interaction");
-        _jump = _player.GetButtonDown("Jump");
-    }
+        private Vector3 _moveVector;
+        private bool _interaction;
+        private bool _overload;
+        private bool _jump;
 
-    public bool IsInteracting() {
-        return _interaction;
-    }
-    
-    public bool HasReleaseFallingFromPlatform()
-    {
-        return _moveVector.y < 0.0f && _player.GetButtonUp("Jump");
-    }
-    
-    public bool IsFallingFromPlatform() {
-        Debug.Log("Is Falling ?" + (_moveVector.y < 0.0f && _jump));
-        return _moveVector.y < 0.0f && _jump;
-    }
-    
-    private void ProcessInput()
-    {
-        // Process movement
-        if (_moveVector.x != 0.0f)
+        private void Awake()
         {
-            playerController.Move(_moveVector.x);
+            if (Instance == null) Instance = this;
+            if (Instance != this) Destroy(gameObject);
+
+            // Get the Player for a particular playerId
+            _player = ReInput.players.GetPlayer(playerId);
         }
 
-        if (_moveVector.y < 0.0f && _jump){
-            //go under platform
-            Debug.Log("UnderPlatform");
-        }
-        else if (_jump)
+        // Update is called once per frame
+        private void Update()
         {
-            playerController.Jump();
-            Debug.Log("Jump");
+            GetInput();
+            ProcessInput();
         }
 
-        if (_overload)
+
+        private void GetInput()
         {
-            Debug.Log("Overload");
+            // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
+            // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
+
+            _moveVector.x = _player.GetAxis("MoveHorizontal"); // get input by name or action id
+            _moveVector.y = _player.GetAxis("MoveVertical");
+            _overload = _player.GetButtonDown("Overload");
+            _interaction = _player.GetButtonDown("Interaction");
+            _jump = _player.GetButtonDown("Jump");
         }
 
-        if (_interaction)
+        public bool IsInteracting()
         {
-            Debug.Log("Interaction");
+            return _interaction;
+        }
+
+        public bool HasReleaseFallingFromPlatform()
+        {
+            return _moveVector.y < 0.0f && _player.GetButtonUp("Jump");
+        }
+
+        public bool IsFallingFromPlatform()
+        {
+            Debug.Log("Is Falling ?" + (_moveVector.y < 0.0f && _jump));
+            return _moveVector.y < 0.0f && _jump;
+        }
+
+        private void ProcessInput()
+        {
+            // Process movement
+            if (_moveVector.x > 0.0f || _moveVector.x < 0.0f)
+            {
+                playerController.Move(_moveVector.x);
+            }
+
+            if (_jump)
+            {
+                playerController.Jump();
+            }
+
+            if (_overload)
+            {
+                Debug.Log("Overload");
+            }
         }
     }
 }

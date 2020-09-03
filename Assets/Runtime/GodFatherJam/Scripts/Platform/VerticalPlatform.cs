@@ -1,5 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using CharacterController = GodFather.CharacterController;
 
 public class VerticalPlatform : MonoBehaviour
 {
