@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using CharacterController = GodFather.CharacterController;
 
 public class Interuptor : MonoBehaviour
 {
@@ -8,10 +7,6 @@ public class Interuptor : MonoBehaviour
 
     void Start(){
         spriteDeLaToucheB.enabled = false;
-    }
-
-
-    void Update(){
     }
 
     public Door doortoactivate;
