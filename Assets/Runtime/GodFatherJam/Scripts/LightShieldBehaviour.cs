@@ -80,7 +80,7 @@ public class LightShieldBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("EnemyGFX")) return;
+        if (!other.CompareTag("EnemyGFX") || other.GetComponent<EnemyFlip>()._isBlinded) return;
 
         if (!IsOverloaded)
         {

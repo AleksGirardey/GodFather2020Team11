@@ -307,7 +307,7 @@ MonoBehaviour:
   aiPath: {fileID: 8935717934458904787}
   targetBehaviour: {fileID: 8935717934458904785}
   rb: {fileID: 8935717934458904796}
-  GFXCollider: {fileID: 0}
+  GFXCollider: {fileID: 8935717935693679647}
 --- !u!61 &8935717935693679647
 BoxCollider2D:
   m_ObjectHideFlags: 0
