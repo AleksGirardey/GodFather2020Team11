@@ -28562,40 +28562,12 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[1]
       value: 
       objectReference: {fileID: 7000982005500060187}
-    - target: {fileID: 8935717934458904785, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2101615409814447878}
     - target: {fileID: 8935717934458904797, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
       propertyPath: m_Name
       value: Enemy Flying
       objectReference: {fileID: 0}
-    - target: {fileID: 8935717935693679646, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2101615409814447878}
-    - target: {fileID: 8935717935693679646, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
-      propertyPath: targetBehaviour
-      value: 
-      objectReference: {fileID: 2101615409814447879}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
---- !u!95 &2101615409814447878 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7270313184369112531, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
-  m_PrefabInstance: {fileID: 2101615409814447877}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2101615409814447879 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8935717934458904785, guid: a24ad8e006c884c488d713c81619b9f4, type: 3}
-  m_PrefabInstance: {fileID: 2101615409814447877}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25e53413d9431eb47ab0e8ae91f716c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7000982005291640197
 Transform:
   m_ObjectHideFlags: 0
