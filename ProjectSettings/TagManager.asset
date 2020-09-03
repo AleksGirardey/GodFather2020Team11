@@ -8,6 +8,7 @@ TagManager:
   - Plateforme
   - Enemy
   - EnemyGFX
+  - VeilleuseLight
   - Light
   layers:
   - Default
