@@ -85,4 +85,6 @@ public class CharacterController : MonoBehaviour
             Debug.Log("Interaction");
         }
     }
+
+
 }
