@@ -119,8 +119,4 @@ public class LightShieldBehaviour : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, OverloadLightRadius);
     }
-
-    public bool IsOverloaded() {
-        return false;
-    }
 }
