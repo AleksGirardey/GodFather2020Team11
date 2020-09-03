@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: b87764282ce8a1d4597a0c1e1a230b84
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4576728213647865949
+    second: Crow Monster Sprite Sheet_0
+  - first:
+      213: 5211521584516763203
+    second: Crow Monster Sprite Sheet_1
+  - first:
+      213: -8243037411930116902
+    second: Crow Monster Sprite Sheet_2
+  - first:
+      213: 4293450402804169654
+    second: Crow Monster Sprite Sheet_3
+  - first:
+      213: 7222921853458511179
+    second: Crow Monster Sprite Sheet_4
+  - first:
+      213: -7761756607916640545
+    second: Crow Monster Sprite Sheet_5
+  - first:
+      213: -5121167283434087269
+    second: Crow Monster Sprite Sheet_6
+  - first:
+      213: 4498360425851551262
+    second: Crow Monster Sprite Sheet_7
+  - first:
+      213: -2647252548716209800
+    second: Crow Monster Sprite Sheet_8
+  - first:
+      213: 4190806752154252039
+    second: Crow Monster Sprite Sheet_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,7 +117,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2231
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7c20030f13c70c0800000000000000
+      internalID: -4576728213647865949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2231
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e0760f44b035840800000000000000
+      internalID: 5211521584516763203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 6066
+        y: 2231
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc66a7b529da9d80800000000000000
+      internalID: -8243037411930116902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 8949
+        y: 2231
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb76e7c466659b30800000000000000
+      internalID: 4293450402804169654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 11832
+        y: 2231
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45fcc33829fc3460800000000000000
+      internalID: 7222921853458511179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd676181d73b84490800000000000000
+      internalID: -7761756607916640545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 0
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c1f832d75fde8b0800000000000000
+      internalID: -5121167283434087269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6066
+        y: 0
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e7e8659f26d6e30800000000000000
+      internalID: 4498360425851551262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crow Monster Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 8949
+        y: 0
+        width: 2458
+        height: 2231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879d50b25d1134bd0800000000000000
+      internalID: -2647252548716209800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
