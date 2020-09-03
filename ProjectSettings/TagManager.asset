@@ -7,6 +7,7 @@ TagManager:
   - plateform
   - Plateforme
   - Enemy
+  - ok
   layers:
   - Default
   - TransparentFX
