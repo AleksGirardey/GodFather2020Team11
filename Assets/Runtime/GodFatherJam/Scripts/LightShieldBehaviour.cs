@@ -42,4 +42,8 @@ public class LightShieldBehaviour : MonoBehaviour
         lightCollider.radius = startRadius;
         pointLight.pointLightOuterRadius = startRadius;
     }
+
+    public bool IsOverloaded() {
+        return false;
+    }
 }
