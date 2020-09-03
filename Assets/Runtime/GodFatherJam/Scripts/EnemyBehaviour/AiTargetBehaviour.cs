@@ -7,6 +7,7 @@ using DG.Tweening;
 
 public class AiTargetBehaviour : MonoBehaviour
 {
+
     public AIDestinationSetter targetSetter;
     public AIPath pathfinding;
 
@@ -15,6 +16,7 @@ public class AiTargetBehaviour : MonoBehaviour
 
     public Transform[] patrolPoints;
     private List<int> _unusedPatrolPoints = new List<int>();
+
     public float distanceTresholdToChangeTarget;
     public float patrolTranslationTime;
     public float waitBeforeNextPatrol;
@@ -87,6 +89,7 @@ public class AiTargetBehaviour : MonoBehaviour
         _unusedPatrolPoints.Remove(currentTargetPoint);
         _unusedPatrolPoints.Add(ancientPatrolPoint);
     }
+
 
 
     void OnTriggerEnter2D(Collider2D other)
