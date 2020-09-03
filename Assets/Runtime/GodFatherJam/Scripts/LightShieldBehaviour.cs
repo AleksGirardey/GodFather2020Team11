@@ -26,6 +26,8 @@ public class LightShieldBehaviour : MonoBehaviour
     private float currentOverloadGrowthTime = 0;
     private float currentLightRadius;
     private float normalLightIntensity;
+
+    public PlayerController playerController;
     private void Start()
     {
         _pointLight.pointLightOuterRadius = lightRadius;
@@ -113,6 +115,7 @@ public class LightShieldBehaviour : MonoBehaviour
         _pointLight.pointLightOuterRadius = lightRadius;
         _lightCollider.enabled = true;
         _pointLight.enabled = true;
+        numberOfOverloadCharges = playerController.GetLastCheckpoint().GetOverloadChargesToRefill();
     }
 
     void OnDrawGizmosSelected()

@@ -87,10 +87,20 @@ public class EnemyFlip : MonoBehaviour
         }
         else if (other.CompareTag("VeilleuseLight"))
         {
-            aiPath.enabled = false;
+            aiPath.canMove = false;
             targetBehaviour.enabled = false;
             GFXCollider.enabled = false;
+            _isBlinded = true;
+        }
+    }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("VeilleuseLight"))
+        {
+            aiPath.canMove = true;
+            targetBehaviour.enabled = true;
+            GFXCollider.enabled = true;
         }
     }
 }
