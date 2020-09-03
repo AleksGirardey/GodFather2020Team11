@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: tagNames.Array.data[31]
       value: 31
       objectReference: {fileID: 0}
+    - target: {fileID: 9211146123971491504, guid: 4c095b9a7a1830a448a33711b1e11ae2, type: 3}
+      propertyPath: logPathResults
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9211146123971491506, guid: 4c095b9a7a1830a448a33711b1e11ae2, type: 3}
       propertyPath: m_Name
       value: Pathfinding
@@ -28734,6 +28738,7 @@ MonoBehaviour:
   aiPath: {fileID: 7000982005928987107}
   targetBehaviour: {fileID: 0}
   rb: {fileID: 7000982005928987116}
+  _isBlinded: 0
   GFXCollider: {fileID: 0}
 --- !u!61 &7000982007112394031
 BoxCollider2D:

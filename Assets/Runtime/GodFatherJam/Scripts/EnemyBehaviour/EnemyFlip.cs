@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Pathfinding;
 using UnityEngine;
 
@@ -15,7 +16,8 @@ public class EnemyFlip : MonoBehaviour
     public AiTargetBehaviour targetBehaviour;
     public Rigidbody2D rb;
     private SpriteRenderer _sr;
-    private bool _isBlinded = false;
+    public bool _isBlinded = false;
+    private bool _isInVeilleuse = false;
 
     public BoxCollider2D GFXCollider;
 
@@ -60,7 +62,7 @@ public class EnemyFlip : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Light"))
+        if (other.CompareTag("Light") && !_isInVeilleuse)
         {
             //ejected
             LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
@@ -88,9 +90,10 @@ public class EnemyFlip : MonoBehaviour
         else if (other.CompareTag("VeilleuseLight"))
         {
             aiPath.canMove = false;
+            targetBehaviour._movementSequence.Kill();
             targetBehaviour.enabled = false;
-            GFXCollider.enabled = false;
-            _isBlinded = true;
+            _isBlinded = true; 
+            _isInVeilleuse = true;
         }
     }
 
@@ -100,7 +103,9 @@ public class EnemyFlip : MonoBehaviour
         {
             aiPath.canMove = true;
             targetBehaviour.enabled = true;
-            GFXCollider.enabled = true;
+            _isBlinded = false; 
+            _isInVeilleuse = false;
+            rb.velocity = Vector2.zero;
         }
     }
 }

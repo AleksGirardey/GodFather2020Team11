@@ -26,7 +26,7 @@ public class AiTargetBehaviour : MonoBehaviour
     [HideInInspector]
     public bool isPatrolling = true;
     private bool playerInRange = false;
-    private Sequence _movementSequence;
+    public Sequence _movementSequence;
 
     //animation
     public Animator anim;
@@ -36,6 +36,8 @@ public class AiTargetBehaviour : MonoBehaviour
     public Vector3 dist;
     [HideInInspector]
     public float currentSpeed;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -67,10 +69,12 @@ public class AiTargetBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dist = transform.position - lastUpdatePos;
-        currentSpeed = dist.magnitude / Time.deltaTime;
-        lastUpdatePos = transform.position;
-
+        if (isPatrolling)
+        {
+            dist = transform.position - lastUpdatePos;
+            currentSpeed = dist.magnitude / Time.deltaTime;
+            lastUpdatePos = transform.position;
+        }
 
         //if AI is returning from aggro, check if near target point and start patrol again
         if (!isPatrolling && !playerInRange)
