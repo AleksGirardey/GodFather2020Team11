@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Checkpoint _lastCheckpoint;
     public LightShieldBehaviour overloadScript;
 
-    private bool _isGrounded;
+    private bool _isGrounded = true;
     private bool _isFacingRight = true;
 
     private float _lastHorizontalAxis;
@@ -51,6 +51,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void Jump() {
+        if (_isGrounded == false){
+            return;
+        }Debug.Log("collision");
         _myRg2D.velocity = Vector2.up * jumpVelocity;
     }
 
