@@ -1,0 +1,592 @@
+fileFormatVersion: 2
+guid: 71b195de93e59d647a53c588624fea05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8338607824003967840
+    second: Bogeyman Sprite Sheet_0
+  - first:
+      213: 3930167902227261149
+    second: Bogeyman Sprite Sheet_1
+  - first:
+      213: 7730441514716550219
+    second: Bogeyman Sprite Sheet_2
+  - first:
+      213: -7859023828889068839
+    second: Bogeyman Sprite Sheet_3
+  - first:
+      213: 3733317128611717889
+    second: Bogeyman Sprite Sheet_4
+  - first:
+      213: -281596504608486911
+    second: Bogeyman Sprite Sheet_5
+  - first:
+      213: -3671181123586055894
+    second: Bogeyman Sprite Sheet_6
+  - first:
+      213: -6002492571233912950
+    second: Bogeyman Sprite Sheet_7
+  - first:
+      213: -3625157056590277951
+    second: Bogeyman Sprite Sheet_8
+  - first:
+      213: 3461415305178325616
+    second: Bogeyman Sprite Sheet_9
+  - first:
+      213: 6184871867638024778
+    second: Bogeyman Sprite Sheet_10
+  - first:
+      213: 2351719726514468065
+    second: Bogeyman Sprite Sheet_11
+  - first:
+      213: -653857981389099722
+    second: Bogeyman Sprite Sheet_12
+  - first:
+      213: 4108560425774431858
+    second: Bogeyman Sprite Sheet_13
+  - first:
+      213: -1135328790098113616
+    second: Bogeyman Sprite Sheet_14
+  - first:
+      213: -203208911155558283
+    second: Bogeyman Sprite Sheet_15
+  - first:
+      213: 1726830637466431098
+    second: Bogeyman Sprite Sheet_16
+  - first:
+      213: -614076921722373934
+    second: Bogeyman Sprite Sheet_17
+  - first:
+      213: -1993306584792011106
+    second: Bogeyman Sprite Sheet_0
+  - first:
+      213: -2564272376141809460
+    second: Bogeyman Sprite Sheet_1
+  - first:
+      213: 8928536725258369741
+    second: Bogeyman Sprite Sheet_2
+  - first:
+      213: -7987804138446831449
+    second: Bogeyman Sprite Sheet_3
+  - first:
+      213: 7086649611309121356
+    second: Bogeyman Sprite Sheet_4
+  - first:
+      213: -987480153422290968
+    second: Bogeyman Sprite Sheet_5
+  - first:
+      213: 4032105978930997301
+    second: Bogeyman Sprite Sheet_6
+  - first:
+      213: 7886769241100197130
+    second: Bogeyman Sprite Sheet_7
+  - first:
+      213: -7278542382233378224
+    second: Bogeyman Sprite Sheet_8
+  - first:
+      213: 1926952465195426281
+    second: Bogeyman Sprite Sheet_9
+  - first:
+      213: -375638290396947655
+    second: Bogeyman Sprite Sheet_10
+  - first:
+      213: -1154067479551822449
+    second: Bogeyman Sprite Sheet_11
+  - first:
+      213: -2041832707027867096
+    second: Bogeyman Sprite Sheet_12
+  - first:
+      213: -3856580427718374350
+    second: Bogeyman Sprite Sheet_13
+  - first:
+      213: 1374520073452624350
+    second: Bogeyman Sprite Sheet_14
+  - first:
+      213: -8568717936537284631
+    second: Bogeyman Sprite Sheet_15
+  - first:
+      213: 3789968341449209458
+    second: Bogeyman Sprite Sheet_16
+  - first:
+      213: -7524032574178921875
+    second: Bogeyman Sprite Sheet_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e660dd83a5654e0800000000000000
+      internalID: -1993306584792011106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc878b82cdfd96cd0800000000000000
+      internalID: -2564272376141809460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcafd01a8d888eb70800000000000000
+      internalID: 8928536725258369741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a04b70157e952190800000000000000
+      internalID: -7987804138446831449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 10200
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7db95646d85260800000000000000
+      internalID: 7086649611309121356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 12750
+        y: 2924
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef14884804cb42f0800000000000000
+      internalID: -987480153422290968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53829ea560be4f730800000000000000
+      internalID: 4032105978930997301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d1141c6de637d60800000000000000
+      internalID: 7886769241100197130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052aa58444c6dfa90800000000000000
+      internalID: -7278542382233378224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e16903ce09edba10800000000000000
+      internalID: 1926952465195426281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 10200
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bdad017f679caf0800000000000000
+      internalID: -375638290396947655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 12750
+        y: 1462
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85bb7aedbdebffe0800000000000000
+      internalID: -1154067479551822449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a64d698f3f9a3e0800000000000000
+      internalID: -2041832707027867096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c4f16b88caa7ac0800000000000000
+      internalID: -3856580427718374350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed999ca69b6431310800000000000000
+      internalID: 1374520073452624350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef4d2c8f6cc51980800000000000000
+      internalID: -8568717936537284631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 10200
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2767e0e502ca89430800000000000000
+      internalID: 3789968341449209458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bogeyman Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 12750
+        y: 0
+        width: 2550
+        height: 1462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62f891ec34459790800000000000000
+      internalID: -7524032574178921875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
