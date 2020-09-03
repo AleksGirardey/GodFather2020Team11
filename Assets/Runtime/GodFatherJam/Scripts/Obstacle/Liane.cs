@@ -8,7 +8,7 @@ public class Liane : MonoBehaviour {
         
         LightShieldBehaviour lightShieldBehaviour = other.GetComponent<LightShieldBehaviour>();
 
-        if (!lightShieldBehaviour.IsOverloaded()) return;
+        if (!lightShieldBehaviour.IsOverloaded) return;
             
         objectToActivate?.Activate();
         enabled = false;
