@@ -82,10 +82,13 @@ public class LightShieldBehaviour : MonoBehaviour
 
         if (!IsOverloaded)
         {
-            //shrink light radius and collider radius
-            _lightCollider.radius -= _lightCollider.radius / _numberOfHitShieldCanTake;
-            _pointLight.pointLightOuterRadius = _lightCollider.radius;
-            _numberOfHitShieldCanTake -= 1;
+            if (_numberOfHitShieldCanTake > 0)
+            {
+                //shrink light radius and collider radius
+                _lightCollider.radius -= _lightCollider.radius / _numberOfHitShieldCanTake;
+                _pointLight.pointLightOuterRadius = _lightCollider.radius;
+                _numberOfHitShieldCanTake -= 1;
+            }
         }
 
 
