@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Rewired;
 
 namespace GodFather
@@ -13,6 +14,8 @@ namespace GodFather
 
         public PlayerController playerController;
 
+        private Animator _animator; 
+        
         private Vector3 _moveVector;
         private bool _interaction;
         private bool _overload;
@@ -25,6 +28,7 @@ namespace GodFather
 
             // Get the Player for a particular playerId
             _player = ReInput.players.GetPlayer(playerId);
+            _animator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
