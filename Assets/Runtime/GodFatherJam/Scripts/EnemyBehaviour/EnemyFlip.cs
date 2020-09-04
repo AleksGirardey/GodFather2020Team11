@@ -20,6 +20,8 @@ public class EnemyFlip : MonoBehaviour
     private bool _isInVeilleuse = false;
 
     public BoxCollider2D GFXCollider;
+    public AudioSource hit;
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,11 +64,13 @@ public class EnemyFlip : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.CompareTag("Light") && !_isInVeilleuse)
         {
+
             //ejected
             LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
-            light.HitPlayer();
+            light.HitPlayer(hit);
             _isBlinded = true;
             //case when enemy is not flying and light is not overloaded
             if (!light.IsOverloaded && !isFlying)
@@ -80,6 +84,7 @@ public class EnemyFlip : MonoBehaviour
             //overload
             else if (light.IsOverloaded)
             {
+                light.HitPlayer(hit);
                 aiPath.canMove = false;
                 Vector2 direction = (transform.position - other.transform.position).normalized;
                 float distanceToPlayer = light.OverloadLightRadius - Vector2.Distance(other.transform.position, transform.position);

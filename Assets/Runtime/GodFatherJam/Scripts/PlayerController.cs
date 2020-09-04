@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     public Transform groundPoint;
     
     private Animator _animator;
+    public AudioSource overloadAudio;
     
     private void Awake() {
         _myRg2D = GetComponent<Rigidbody2D>();
@@ -53,7 +54,10 @@ public class PlayerController : MonoBehaviour {
     public void Overload()
     {
         if (!overloadScript.IsOverloaded)
+        {
             overloadScript.Overload();
+            overloadAudio.Play();
+        }
     }
 
     public void SetLastCheckpoint(Checkpoint cp) {

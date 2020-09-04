@@ -9,7 +9,8 @@ public class Liane : MonoBehaviour {
         LightShieldBehaviour lightShieldBehaviour = other.GetComponent<LightShieldBehaviour>();
 
         if (!lightShieldBehaviour.IsOverloaded) return;
-            
+        lightShieldBehaviour.activateVines.Play();
+
         if (objectToActivate != null)
             objectToActivate.Activate();
         gameObject.SetActive(false);
