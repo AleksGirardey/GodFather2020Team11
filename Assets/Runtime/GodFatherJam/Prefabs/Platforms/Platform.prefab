@@ -139,6 +139,8 @@ GameObject:
   - component: {fileID: 7257403428207277638}
   - component: {fileID: 7257403428207277636}
   - component: {fileID: 7257403428207277639}
+  - component: {fileID: 3769384952915100188}
+  - component: {fileID: 1884427392494649362}
   m_Layer: 0
   m_Name: Colliders
   m_TagString: Untagged
@@ -205,3 +207,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.969154, y: 2.6728795}
   m_EdgeRadius: 0
+--- !u!58 &3769384952915100188
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257403428207277657}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 83d1b45dff0d17d4c97cceb69e792985, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.1, y: 1}
+  serializedVersion: 2
+  m_Radius: 0.6
+--- !u!58 &1884427392494649362
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257403428207277657}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 83d1b45dff0d17d4c97cceb69e792985, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8, y: 1}
+  serializedVersion: 2
+  m_Radius: 0.6
