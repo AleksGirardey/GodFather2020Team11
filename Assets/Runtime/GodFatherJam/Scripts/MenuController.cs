@@ -16,7 +16,7 @@ public class MenuController : MonoBehaviour {
     private Player _player;
     private bool _canSwitch = true;
     private void Awake() {
-        _player = ReInput.players.GetPlayer(1);
+        _player = ReInput.players.GetPlayer(0);
     }
 
     private void Update() {
@@ -34,7 +34,6 @@ public class MenuController : MonoBehaviour {
             SceneManager.LoadScene("MainScene");
         else
             Application.Quit();
-
     }
 
     private IEnumerator WaitSwitch() {

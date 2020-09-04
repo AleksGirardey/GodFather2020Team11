@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 3bd640a2843219c45a2e9013b1071d02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2394266113263480250
+    second: NicePng_360-icon-png_3047434_0
+  - first:
+      213: -4199455999365527808
+    second: NicePng_360-icon-png_3047434_1
+  - first:
+      213: 215343536276655597
+    second: NicePng_360-icon-png_3047434_2
+  - first:
+      213: -4216881459168302553
+    second: NicePng_360-icon-png_3047434_3
+  - first:
+      213: 7628951808720899608
+    second: NicePng_360-icon-png_3047434_4
+  - first:
+      213: -6083437325547573531
+    second: NicePng_360-icon-png_3047434_5
+  - first:
+      213: 5321530810325382101
+    second: NicePng_360-icon-png_3047434_6
+  - first:
+      213: 3850254669027538927
+    second: NicePng_360-icon-png_3047434_7
+  - first:
+      213: -3185084513481955366
+    second: NicePng_360-icon-png_3047434_8
+  - first:
+      213: -445722202173036033
+    second: NicePng_360-icon-png_3047434_9
+  - first:
+      213: 4079105843839447240
+    second: NicePng_360-icon-png_3047434_10
+  - first:
+      213: 986004275100759392
+    second: NicePng_360-icon-png_3047434_11
+  - first:
+      213: -6569657630589748814
+    second: NicePng_360-icon-png_3047434_12
+  - first:
+      213: 3325714294843212225
+    second: NicePng_360-icon-png_3047434_13
+  - first:
+      213: 5885622312666393146
+    second: NicePng_360-icon-png_3047434_14
+  - first:
+      213: -6942652695125666309
+    second: NicePng_360-icon-png_3047434_15
+  - first:
+      213: -5274390138937064248
+    second: NicePng_360-icon-png_3047434_16
+  - first:
+      213: -7547452688739336275
+    second: NicePng_360-icon-png_3047434_17
+  - first:
+      213: -917137972751740414
+    second: NicePng_360-icon-png_3047434_18
+  - first:
+      213: 7206955291017837550
+    second: NicePng_360-icon-png_3047434_19
+  - first:
+      213: -8877426056045336619
+    second: NicePng_360-icon-png_3047434_20
+  - first:
+      213: -2524002574053916795
+    second: NicePng_360-icon-png_3047434_21
+  - first:
+      213: -4438622208220566441
+    second: NicePng_360-icon-png_3047434_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 225
+        width: 116
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642dc25c7abd5ced0800000000000000
+      internalID: -2394266113263480250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 232
+        width: 117
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0074feba40988b5c0800000000000000
+      internalID: -4199455999365527808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 222
+        width: 117
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded42782ecd0df200800000000000000
+      internalID: 215343536276655597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 230
+        width: 117
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aa756a7a0aa75c0800000000000000
+      internalID: -4216881459168302553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_4
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 247
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e0267004b7fd960800000000000000
+      internalID: 7628951808720899608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_5
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 245
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee626ddbf9439ba0800000000000000
+      internalID: -6083437325547573531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 120
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3bdbac310e9d940800000000000000
+      internalID: 5321530810325382101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 119
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7fc22d83ade6530800000000000000
+      internalID: 3850254669027538927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 120
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad76f42a28e4cc3d0800000000000000
+      internalID: -3185084513481955366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_9
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 118
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9a8f6c40a70d9f0800000000000000
+      internalID: -445722202173036033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 118
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c035472725eb9830800000000000000
+      internalID: 4079105843839447240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 135
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065b5640aadfead00800000000000000
+      internalID: 986004275100759392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_12
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 133
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b973c84133e3d4a0800000000000000
+      internalID: -6569657630589748814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 25
+        width: 78
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c18190e78f472e20800000000000000
+      internalID: 3325714294843212225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 24
+        width: 78
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ae79c5f4eeda150800000000000000
+      internalID: 5885622312666393146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_15
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 8
+        width: 60
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf55024582eb6af90800000000000000
+      internalID: -6942652695125666309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_16
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 9
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c445d11d1a9dc6b0800000000000000
+      internalID: -5274390138937064248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_17
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 52
+        width: 93
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafff9884cf024790800000000000000
+      internalID: -7547452688739336275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_19
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 52
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb7d3137af340460800000000000000
+      internalID: 7206955291017837550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_20
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 51
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7ee91690c0dc480800000000000000
+      internalID: -8877426056045336619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_360-icon-png_3047434_22
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 93
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c6ad25e98d662c0800000000000000
+      internalID: -4438622208220566441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

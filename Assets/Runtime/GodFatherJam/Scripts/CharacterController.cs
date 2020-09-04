@@ -47,7 +47,7 @@ namespace GodFather
             _moveVector.y = _player.GetAxis("MoveVertical");
             _overload = _player.GetButtonDown("Overload");
             _interaction = _player.GetButtonDown("Interaction");
-            _jump = _player.GetButtonDown("Jump") && (_moveVector.y >= 0.0f);
+            _jump = _player.GetButtonDown("Jump") && (_moveVector.y >= -0.7f);
         }
 
         public bool IsInteracting()
@@ -55,9 +55,8 @@ namespace GodFather
             return _interaction;
         }
 
-        public bool HasReleaseFallingFromPlatform()
-        {
-            return _moveVector.y < 0.0f && _player.GetButtonUp("Jump");
+        public bool HasReleaseFallingFromPlatform() {
+            return _moveVector.y < -0.7f && _player.GetButtonUp("Jump");
         }
 
         public bool IsFallingFromPlatform() {
@@ -72,8 +71,7 @@ namespace GodFather
                 playerController.Move(_moveVector.x);
             }
 
-            if (_jump)
-            {
+            if (_jump) {
                 playerController.Jump();
             }
 

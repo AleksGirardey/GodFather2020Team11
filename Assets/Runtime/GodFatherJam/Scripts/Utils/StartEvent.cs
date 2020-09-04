@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class StartEvent : MonoBehaviour
@@ -9,6 +7,7 @@ public class StartEvent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        eventToTrigger.Invoke();
+        if (other.CompareTag("Player"))
+            eventToTrigger.Invoke();
     }
 }
