@@ -37,6 +37,7 @@ public class AiTargetBehaviour : MonoBehaviour
     [HideInInspector]
     public float currentSpeed;
 
+    public AudioSource chase;
 
 
     // Start is called before the first frame update
@@ -127,6 +128,8 @@ public class AiTargetBehaviour : MonoBehaviour
             playerInRange = true;
             pathfinding.enabled = true;
             targetSetter.target = other.transform;
+            if(chase != null)
+                chase.Play();
             //kill current patrol sequence
             _movementSequence.Kill();
         }

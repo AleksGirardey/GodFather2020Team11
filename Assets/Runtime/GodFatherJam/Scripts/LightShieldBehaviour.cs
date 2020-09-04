@@ -30,6 +30,7 @@ public class LightShieldBehaviour : MonoBehaviour
     private float normalLightIntensity;
     private bool _canBeKilled;
 
+    public AudioSource activateVines;
     public PlayerController playerController;
     private void Start()
     {
@@ -82,12 +83,14 @@ public class LightShieldBehaviour : MonoBehaviour
         IsOverloaded = false;
     }
 
-    public void HitPlayer()
+    public void HitPlayer(AudioSource MonsterHitAudio)
     {
         if (!IsOverloaded)
         {
             if (_numberOfHitShieldCanTake > 0)
             {
+                if(MonsterHitAudio != null && !MonsterHitAudio.isPlaying)
+                    MonsterHitAudio.Play();
                 //shrink light radius and collider radius
                 _lightCollider.radius -= _lightCollider.radius / _numberOfHitShieldCanTake;
                 _pointLight.pointLightOuterRadius = _lightCollider.radius;
