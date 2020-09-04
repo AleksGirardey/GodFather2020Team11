@@ -66,6 +66,7 @@ public class EnemyFlip : MonoBehaviour
         {
             //ejected
             LightShieldBehaviour light = other.GetComponent<LightShieldBehaviour>();
+            light.HitPlayer();
             _isBlinded = true;
             //case when enemy is not flying and light is not overloaded
             if (!light.IsOverloaded && !isFlying)
@@ -87,6 +88,7 @@ public class EnemyFlip : MonoBehaviour
                 StartCoroutine(WaitUntilVelocityGoesTo0());
             }
         }
+
         else if (other.CompareTag("VeilleuseLight"))
         {
             aiPath.canMove = false;

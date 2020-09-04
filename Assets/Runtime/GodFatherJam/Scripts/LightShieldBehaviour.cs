@@ -7,11 +7,13 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightShieldBehaviour : MonoBehaviour
 {
-    [SerializeField] private int _numberOfHitShieldCanTake;
+    [SerializeField] private int _numberOfHitShieldCanTakeMax;
     [SerializeField] private Light2D _pointLight;
     [SerializeField] private CircleCollider2D _lightCollider;
+    [SerializeField] private BoxCollider2D _killCollider;
     [SerializeField] private float lightRadius;
     public float NormalLightEjectionForce;
+    private int _numberOfHitShieldCanTake;
 
 
     [Header("Overload")]
@@ -26,10 +28,12 @@ public class LightShieldBehaviour : MonoBehaviour
     private float currentOverloadGrowthTime = 0;
     private float currentLightRadius;
     private float normalLightIntensity;
+    private bool _canBeKilled;
 
     public PlayerController playerController;
     private void Start()
     {
+        _numberOfHitShieldCanTake = _numberOfHitShieldCanTakeMax;
         _pointLight.pointLightOuterRadius = lightRadius;
         _lightCollider.radius = lightRadius;
         currentLightRadius = lightRadius;
@@ -78,10 +82,8 @@ public class LightShieldBehaviour : MonoBehaviour
         IsOverloaded = false;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void HitPlayer()
     {
-        if (!other.CompareTag("EnemyGFX") || other.GetComponent<EnemyFlip>()._isBlinded) return;
-
         if (!IsOverloaded)
         {
             if (_numberOfHitShieldCanTake > 0)
@@ -93,6 +95,11 @@ public class LightShieldBehaviour : MonoBehaviour
             }
         }
 
+        if (_canBeKilled)
+        {
+            playerController.ReSpawn();
+            return;
+        }
 
         //deactivate collider and light if no radius left
         if (_numberOfHitShieldCanTake <= 0)
@@ -100,8 +107,12 @@ public class LightShieldBehaviour : MonoBehaviour
             _lightCollider.radius = 0;
             _pointLight.pointLightOuterRadius = 0;
             _numberOfHitShieldCanTake = 0;
+            _killCollider.enabled = true;
+            _canBeKilled = true;
         }
     }
+
+
 
     public void AddChargesToOverload(int chargesToAdd)
     {
@@ -113,8 +124,11 @@ public class LightShieldBehaviour : MonoBehaviour
     {
         _lightCollider.radius = lightRadius;
         _pointLight.pointLightOuterRadius = lightRadius;
+        _numberOfHitShieldCanTake = _numberOfHitShieldCanTakeMax;
         _lightCollider.enabled = true;
         _pointLight.enabled = true;
+        _canBeKilled = false;
+        _killCollider.enabled = false;
         numberOfOverloadCharges = playerController.GetLastCheckpoint().GetOverloadChargesToRefill();
     }
 
