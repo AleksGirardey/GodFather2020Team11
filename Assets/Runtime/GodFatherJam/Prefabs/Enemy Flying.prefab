@@ -143,7 +143,7 @@ MonoBehaviour:
   anim: {fileID: 7270313184369112531}
   dist: {x: 0, y: 0, z: 0}
   currentSpeed: 0
-  chase: {fileID: 0}
+  chase: {fileID: 1577254463}
 --- !u!58 &8935717934458904798
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   rb: {fileID: 8935717934458904796}
   _isBlinded: 0
   GFXCollider: {fileID: 8935717935693679647}
-  hit: {fileID: 0}
+  hit: {fileID: 1184906161}
 --- !u!61 &8935717935693679647
 BoxCollider2D:
   m_ObjectHideFlags: 0
