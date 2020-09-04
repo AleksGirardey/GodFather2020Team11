@@ -1,7 +1,82 @@
 fileFormatVersion: 2
 guid: cf7a19df286abf9449732eef44b1ca23
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 680377362812587495
+    second: Ebony Sprite Sheet Cinematique_0
+  - first:
+      213: -1177507894573792147
+    second: Ebony Sprite Sheet Cinematique_0
+  - first:
+      213: 3057706740361193633
+    second: Ebony Sprite Sheet Cinematique_1
+  - first:
+      213: 8256517310536604609
+    second: Ebony Sprite Sheet Cinematique_2
+  - first:
+      213: -3576864172885758714
+    second: Ebony Sprite Sheet Cinematique_3
+  - first:
+      213: 7851843596990706502
+    second: Ebony Sprite Sheet Cinematique_4
+  - first:
+      213: -2225719225985664591
+    second: Ebony Sprite Sheet Cinematique_5
+  - first:
+      213: -6393365165160077764
+    second: Ebony Sprite Sheet Cinematique_6
+  - first:
+      213: 7736070936891546083
+    second: Ebony Sprite Sheet Cinematique_7
+  - first:
+      213: 7314094599199281348
+    second: Ebony Sprite Sheet Cinematique_8
+  - first:
+      213: -937614166966376231
+    second: Ebony Sprite Sheet Cinematique_9
+  - first:
+      213: 3871072524399744861
+    second: Ebony Sprite Sheet Cinematique_10
+  - first:
+      213: 851981951508347690
+    second: Ebony Sprite Sheet Cinematique_11
+  - first:
+      213: 2160997588697245345
+    second: Ebony Sprite Sheet Cinematique_12
+  - first:
+      213: -1656824666582181591
+    second: Ebony Sprite Sheet Cinematique_13
+  - first:
+      213: 6929957286362377215
+    second: Ebony Sprite Sheet Cinematique_14
+  - first:
+      213: -6994912569245527162
+    second: Ebony Sprite Sheet Cinematique_15
+  - first:
+      213: -3227669516580364672
+    second: Ebony Sprite Sheet Cinematique_16
+  - first:
+      213: -2254456933266899206
+    second: Ebony Sprite Sheet Cinematique_17
+  - first:
+      213: -3416498156969522785
+    second: Ebony Sprite Sheet Cinematique_18
+  - first:
+      213: 4471139223176292967
+    second: Ebony Sprite Sheet Cinematique_19
+  - first:
+      213: -9139957006969229896
+    second: Ebony Sprite Sheet Cinematique_20
+  - first:
+      213: 3415153704848593571
+    second: Ebony Sprite Sheet Cinematique_21
+  - first:
+      213: -2430036682518247298
+    second: Ebony Sprite Sheet Cinematique_22
+  - first:
+      213: -6760836647049910466
+    second: Ebony Sprite Sheet Cinematique_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +107,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +116,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +138,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -75,7 +162,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6406bffec6a8afe0800000000000000
+      internalID: -1177507894573792147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_1
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8eb8674182f6a20800000000000000
+      internalID: 3057706740361193633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_2
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbd560cfba059270800000000000000
+      internalID: 8256517310536604609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_3
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60da25d5cfc6c5ec0800000000000000
+      internalID: -3576864172885758714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_4
+      rect:
+        serializedVersion: 2
+        x: 8776
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6437e8e862a57fc60800000000000000
+      internalID: 7851843596990706502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_5
+      rect:
+        serializedVersion: 2
+        x: 10970
+        y: 8919
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9fd550828ac11e0800000000000000
+      internalID: -2225719225985664591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36e64b71443647a0800000000000000
+      internalID: -6393365165160077764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_7
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9d4a6978b0c5b60800000000000000
+      internalID: 7736070936891546083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_8
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c050e64942e08560800000000000000
+      internalID: 7314094599199281348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_9
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8689102ececf2f0800000000000000
+      internalID: -937614166966376231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_10
+      rect:
+        serializedVersion: 2
+        x: 8776
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d571f9c73ffc8b530800000000000000
+      internalID: 3871072524399744861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_11
+      rect:
+        serializedVersion: 2
+        x: 10970
+        y: 5946
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bf2b62219d2db00800000000000000
+      internalID: 851981951508347690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a666c28bd76dfd10800000000000000
+      internalID: 2160997588697245345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_13
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92993457eb6c109e0800000000000000
+      internalID: -1656824666582181591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_14
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb624a7f672c2060800000000000000
+      internalID: 6929957286362377215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_15
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683943334141dee90800000000000000
+      internalID: -6994912569245527162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_16
+      rect:
+        serializedVersion: 2
+        x: 8776
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eded3fca30533d0800000000000000
+      internalID: -3227669516580364672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_17
+      rect:
+        serializedVersion: 2
+        x: 10970
+        y: 2973
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeb5332d5f86b0e0800000000000000
+      internalID: -2254456933266899206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f990e0217092690d0800000000000000
+      internalID: -3416498156969522785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_19
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a2db23f6dac0e30800000000000000
+      internalID: 4471139223176292967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_20
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bda1491789582180800000000000000
+      internalID: -9139957006969229896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_21
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a21cd64330156f20800000000000000
+      internalID: 3415153704848593571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_22
+      rect:
+        serializedVersion: 2
+        x: 8776
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78c45b1386c64ed0800000000000000
+      internalID: -2430036682518247298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ebony Sprite Sheet Cinematique_23
+      rect:
+        serializedVersion: 2
+        x: 10970
+        y: 0
+        width: 2194
+        height: 2973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37a524d3eeac22a0800000000000000
+      internalID: -6760836647049910466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
